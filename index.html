@@ -1,198 +1,629 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog de Mascotas</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BlogMascotas — Consejos, adopción y salud para tus compañeros</title>
+    <meta
+      name="description"
+      content="BlogMascotas: artículos prácticos sobre cuidado, entrenamiento y adopción de perros y gatos. Guías y consejos de expertos para dueños responsables."
+    />
+    <meta
+      name="keywords"
+      content="mascotas, perro, gato, adopción, cuidados, veterinaria, entrenamiento"
+    />
+    <link rel="canonical" href="https://example.com/" />
+    <meta
+      property="og:title"
+      content="BlogMascotas — Consejos, adopción y salud para tus compañeros"
+    />
+    <meta
+      property="og:description"
+      content="Artículos prácticos sobre cuidado, entrenamiento y adopción de mascotas."
+    />
+    <meta property="og:image" content="./images/pets-pandemic-1.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=PT+Sans:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="./images/patas.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "BlogMascotas",
+        "url": "https://example.com/",
+        "logo": "https://example.com/images/pow.svg"
+      }
+    </script>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <a href="" class="logo">
-          <img src="./images/pow.svg" alt="Imagen del Logo" class="logo-img" />
+    <a class="skip-link" href="#main-content">Ir al contenido</a>
+    <header class="header" role="banner">
+      <div class="container header-inner">
+        <a href="#top" class="logo" aria-label="BlogMascotas - inicio">
+          <img
+            src="./images/pow.svg"
+            alt="Logo BlogMascotas"
+            class="logo-img"
+          />
           <h1 class="logo-title">
             Blog<span class="logo-text">Mascotas</span>
           </h1>
         </a>
-
-        <nav class="nav">
-          <a href="" class="nav-link">Nosotros</a>
-          <a href="" class="nav-link">Adoptame</a>
-          <a href="" class="nav-link">Donaciones</a>
+        <nav class="nav" role="navigation" aria-label="Menú principal">
+          <a href="#nosotros" class="nav-link">Nosotros</a>
+          <a href="#blog" class="nav-link">Blog</a>
+          <a href="#adoptame" class="nav-link">Adóptame</a>
+          <a href="#contacto" class="nav-link">Contacto</a>
         </nav>
       </div>
     </header>
 
-    <main class="main">
+    <main id="main-content" class="main">
       <!-- Hero -->
-      <section class="hero">
-        <div class="overlay"></div>
-        <div class="container">
-          <h2 class="hero-title">
-            Un Blog sobre el cuidado y consejos para tus mascotas
-          </h2>
+      <section id="hero" class="hero" aria-label="Hero - Bienvenida">
+        <div class="overlay" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <h2 class="hero-title">Cuidar a tu mascota nunca fue tan fácil</h2>
           <p class="hero-description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel eum
-            sint cumque error sunt iure saepe ipsum, in hic labore.
+            Guías prácticas, consejos de expertos y recursos para que tu perro o
+            gato viva sano y feliz.
           </p>
-        </div>
-      </section>
-
-      <!-- Blog -->
-      <section class="blog">
-        <div class="container">
-          <h2 class="blog-title">Nuestro Blog</h2>
-
-          <div class="articulos">
-            <!-- Articulo #1 -->
-            <article class="article">
-              <div class="article-img">
-                <img
-                  src="https://www.altonivel.com.mx/wp-content/uploads/2013/11/mascotas-perros.jpg"
-                  alt="imagen-blog"
-                />
-              </div>
-              <div class="article-body">
-                <h3 class="article-title">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </h3>
-                <p class="article-description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non
-                  voluptatem quaerat reprehenderit provident! Quisquam, tempore.
-                  Vitae dolores, a, blanditiis explicabo voluptas inventore
-                  dolore amet id odio voluptatibus harum eum omnis!
-                </p>
-                <a href="#" class="article-link">Leer Más</a>
-              </div>
-            </article>
-            <!-- Articulo #2 -->
-            <article class="article">
-              <div class="article-img">
-                <img
-                  src="https://static.nationalgeographicla.com/files/styles/image_3200/public/pets-pandemic-1.jpg?w=1600&h=900"
-                  alt="imagen-blog"
-                />
-              </div>
-              <div class="article-body">
-                <h3 class="article-title">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </h3>
-                <p class="article-description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non
-                  voluptatem quaerat reprehenderit provident! Quisquam, tempore.
-                  Vitae dolores, a, blanditiis explicabo voluptas inventore
-                  dolore amet id odio voluptatibus harum eum omnis!
-                </p>
-                <a href="#" class="article-link">Leer Más</a>
-              </div>
-            </article>
-            <!-- Articulo #3 -->
-            <article class="article">
-              <div class="article-img">
-                <img
-                  src="https://caracol.com.co/resizer/z9XuHoKW7CdEXxHu4DpXzR12LV4=/800x600/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/prisaradioco/YNBEB2GVXJNKJIC2JFD73NCVB4.jpg"
-                  alt="imagen-blog"
-                />
-              </div>
-              <div class="article-body">
-                <h3 class="article-title">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </h3>
-                <p class="article-description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non
-                  voluptatem quaerat reprehenderit provident! Quisquam, tempore.
-                  Vitae dolores, a, blanditiis explicabo voluptas inventore
-                  dolore amet id odio voluptatibus harum eum omnis!
-                </p>
-                <a href="#" class="article-link">Leer Más</a>
-              </div>
-            </article>
-            <!-- Articulo #4 -->
-            <article class="article">
-              <div class="article-img">
-                <img
-                  src="https://www.doggysmarket.com.co/wp-content/uploads/elementor/thumbs/Las-10-Mejores-razas-de-perro-si-tienes-hijos-3-q0jdak1s62r65u02juvrahn9fdm0tyok3javeji4ig.jpg"
-                  alt="imagen-blog"
-                />
-              </div>
-              <div class="article-body">
-                <h3 class="article-title">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </h3>
-                <p class="article-description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non
-                  voluptatem quaerat reprehenderit provident! Quisquam, tempore.
-                  Vitae dolores, a, blanditiis explicabo voluptas inventore
-                  dolore amet id odio voluptatibus harum eum omnis!
-                </p>
-                <a href="#" class="article-link">Leer Más</a>
-              </div>
-            </article>
-            <!-- Articulo #5 -->
-            <article class="article">
-              <div class="article-img">
-                <img
-                  src="https://fotografias.lasexta.com/clipping/cmsimages01/2021/07/14/59517B2D-7AC9-4322-8EFD-EF9CABE52B08/69.jpg?crop=596,335,x31,y0&width=1280&height=720&optimize=low&format=webply"
-                />
-              </div>
-              <div class="article-body">
-                <h3 class="article-title">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </h3>
-                <p class="article-description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non
-                  voluptatem quaerat reprehenderit provident! Quisquam, tempore.
-                  Vitae dolores, a, blanditiis explicabo voluptas inventore
-                  dolore amet id odio voluptatibus harum eum omnis!
-                </p>
-                <a href="#" class="article-link">Leer Más</a>
-              </div>
-            </article>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#blog">Ver artículos</a>
+            <a class="btn btn-outline" href="#adoptame">Adopta hoy</a>
           </div>
         </div>
       </section>
 
-      <!-- Parallax -->
-      <section class="parallax">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave"><path fill="currentColor" fill-opacity="1" d="M0,128L80,149.3C160,171,320,213,480,240C640,267,800,277,960,266.7C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+      <!-- Nosotros -->
+      <section id="nosotros" class="nosotros" aria-labelledby="nosotros-heading">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="nosotros-heading" class="section-title">Nosotros</h2>
+            <p class="lead">Somos un equipo apasionado por el bienestar animal</p>
+          </header>
+          
+          <div class="nosotros-content">
+            <div class="nosotros-text reveal">
+              <h3 class="subtitle">Nuestra misión</h3>
+              <p>En BlogMascotas creemos que cada animal merece una vida plena y feliz. Nuestro objetivo es proporcionar información confiable, consejos prácticos y recursos útiles para que puedas cuidar mejor a tu compañero peludo.</p>
+              
+              <h3 class="subtitle">¿Qué ofrecemos?</h3>
+              <ul class="features-list">
+                <li class="feature-item">
+                  <span class="feature-icon">🏥</span>
+                  <div>
+                    <strong>Consejos veterinarios</strong>
+                    <p>Información validada por profesionales de la salud animal</p>
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-icon">🎾</span>
+                  <div>
+                    <strong>Guías de entrenamiento</strong>
+                    <p>Técnicas efectivas para educar y socializar a tu mascota</p>
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-icon">❤️</span>
+                  <div>
+                    <strong>Adopción responsable</strong>
+                    <p>Conectamos familias con mascotas que necesitan un hogar</p>
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-icon">📚</span>
+                  <div>
+                    <strong>Recursos educativos</strong>
+                    <p>Artículos, videos y herramientas para dueños responsables</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="nosotros-stats reveal">
+              <h3 class="subtitle">Nuestro impacto</h3>
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <span class="stat-number">10,000+</span>
+                  <span class="stat-label">Lectores mensuales</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">500+</span>
+                  <span class="stat-label">Artículos publicados</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">200+</span>
+                  <span class="stat-label">Adopciones exitosas</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">5</span>
+                  <span class="stat-label">Años de experiencia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <!-- Blog -->
+      <section id="blog" class="blog" aria-labelledby="blog-heading">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="blog-heading" class="blog-title">Blog de Mascotas</h2>
+            <p class="lead">
+              Consejos, guías y noticias para dueños responsables.
+            </p>
+            <div class="blog-categories">
+              <button class="category-btn active" data-category="todos">Todos</button>
+              <button class="category-btn" data-category="perros">Perros</button>
+              <button class="category-btn" data-category="gatos">Gatos</button>
+              <button class="category-btn" data-category="cuidados">Cuidados</button>
+              <button class="category-btn" data-category="adopcion">Adopción</button>
+            </div>
+          </header>
+
+          <div class="articulos">
+            <!-- Artículos destacados -->
+            <article
+              class="article reveal"
+              itemscope
+              itemtype="https://schema.org/BlogPosting"
+              data-category="perros"
+            >
+              <figure class="article-img">
+                <img
+                  src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcd"
+                  alt="Perro feliz jugando"
+                  loading="lazy"
+                  itemprop="image"
+                />
+                <figcaption>Consejos para el juego seguro</figcaption>
+                <span class="article-badge">Perros</span>
+              </figure>
+              <div class="article-body">
+                <div class="article-meta">
+                  <time datetime="2025-08-10">10 Aug 2025</time>
+                  <span class="reading-time">5 min lectura</span>
+                </div>
+                <h3 class="article-title" itemprop="headline">
+                  Cómo elegir juguetes seguros para tu perro
+                </h3>
+                <p class="article-description" itemprop="description">
+                  Aprende a escoger juguetes resistentes, no tóxicos y adecuados
+                  a la edad y tamaño de tu perro para evitar accidentes.
+                </p>
+                <div class="more" aria-hidden="true">
+                  Recomendaciones por tamaño: razas pequeñas — juguetes blandos;
+                  razas grandes — juguetes resistentes. Evita piezas pequeñas
+                  que puedan tragarse. Revisa el juguete regularmente.
+                </div>
+                <div class="article-actions">
+                  <button class="toggle-more" aria-expanded="false">
+                    Más info
+                  </button>
+                  <a href="#" class="article-link">Leer más</a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="article reveal"
+              itemscope
+              itemtype="https://schema.org/BlogPosting"
+              data-category="gatos"
+            >
+              <figure class="article-img">
+                <img
+                  src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=efgh"
+                  alt="Gato descansando"
+                  loading="lazy"
+                  itemprop="image"
+                />
+                <figcaption>Rutinas de descanso</figcaption>
+                <span class="article-badge">Gatos</span>
+              </figure>
+              <div class="article-body">
+                <div class="article-meta">
+                  <time datetime="2025-08-08">8 Aug 2025</time>
+                  <span class="reading-time">4 min lectura</span>
+                </div>
+                <h3 class="article-title">
+                  Rutinas de sueño saludables para gatos
+                </h3>
+                <p class="article-description">
+                  Descubre cómo crear un ambiente que favorezca el descanso y
+                  reduzca el estrés en gatos domésticos.
+                </p>
+                <div class="more" aria-hidden="true">
+                  Crea zonas tranquilas, mantén horarios regulares y evita
+                  ruidos fuertes. Proporciona rascadores y perchas elevadas para
+                  seguridad.
+                </div>
+                <div class="article-actions">
+                  <button class="toggle-more" aria-expanded="false">
+                    Más info
+                  </button>
+                  <a href="#" class="article-link">Leer más</a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="article reveal"
+              itemscope
+              itemtype="https://schema.org/BlogPosting"
+              data-category="cuidados"
+            >
+              <figure class="article-img">
+                <img
+                  src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=ijkl"
+                  alt="Cepillado de mascota"
+                  loading="lazy"
+                  itemprop="image"
+                />
+                <figcaption>Cuidados y estética</figcaption>
+                <span class="article-badge">Cuidados</span>
+              </figure>
+              <div class="article-body">
+                <div class="article-meta">
+                  <time datetime="2025-08-05">5 Aug 2025</time>
+                  <span class="reading-time">6 min lectura</span>
+                </div>
+                <h3 class="article-title">
+                  Guía básica de higiene para tu mascota
+                </h3>
+                <p class="article-description">
+                  Técnicas de cepillado, baños y cuidados de piel para mantener
+                  a tu mascota sana y con buen aspecto.
+                </p>
+                <div class="more" aria-hidden="true">
+                  Frecuencia de baño, cepillado según tipo de pelo, cuidados de
+                  oídos y uñas. Consulta con tu veterinario para productos
+                  adecuados.
+                </div>
+                <div class="article-actions">
+                  <button class="toggle-more" aria-expanded="false">
+                    Más info
+                  </button>
+                  <a href="#" class="article-link">Leer más</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Artículos adicionales -->
+            <article
+              class="article reveal"
+              itemscope
+              itemtype="https://schema.org/BlogPosting"
+              data-category="adopcion"
+            >
+              <figure class="article-img">
+                <img
+                  src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3"
+                  alt="Adopción de mascotas"
+                  loading="lazy"
+                  itemprop="image"
+                />
+                <figcaption>Proceso de adopción</figcaption>
+                <span class="article-badge">Adopción</span>
+              </figure>
+              <div class="article-body">
+                <div class="article-meta">
+                  <time datetime="2025-08-03">3 Aug 2025</time>
+                  <span class="reading-time">7 min lectura</span>
+                </div>
+                <h3 class="article-title">
+                  Preparando tu hogar para una adopción
+                </h3>
+                <p class="article-description">
+                  Todo lo que necesitas saber antes de adoptar: desde preparar el espacio hasta los primeros días en casa.
+                </p>
+                <div class="more" aria-hidden="true">
+                  Lista de suministros básicos, consejos para la adaptación, y cómo hacer que tu nueva mascota se sienta segura en su nuevo hogar.
+                </div>
+                <div class="article-actions">
+                  <button class="toggle-more" aria-expanded="false">
+                    Más info
+                  </button>
+                  <a href="#" class="article-link">Leer más</a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="article reveal"
+              itemscope
+              itemtype="https://schema.org/BlogPosting"
+              data-category="perros"
+            >
+              <figure class="article-img">
+                <img
+                  src="https://images.unsplash.com/photo-1552053831-71594a27632d?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3"
+                  alt="Entrenamiento de perros"
+                  loading="lazy"
+                  itemprop="image"
+                />
+                <figcaption>Técnicas de entrenamiento</figcaption>
+                <span class="article-badge">Perros</span>
+              </figure>
+              <div class="article-body">
+                <div class="article-meta">
+                  <time datetime="2025-08-01">1 Aug 2025</time>
+                  <span class="reading-time">8 min lectura</span>
+                </div>
+                <h3 class="article-title">
+                  Entrenamiento básico: primeros comandos
+                </h3>
+                <p class="article-description">
+                  Aprende a enseñar comandos esenciales como "sentado", "quieto" y "ven aquí" con técnicas de refuerzo positivo.
+                </p>
+                <div class="more" aria-hidden="true">
+                  Métodos paso a paso, consejos de timing, y cómo mantener sesiones de entrenamiento efectivas y divertidas para tu perro.
+                </div>
+                <div class="article-actions">
+                  <button class="toggle-more" aria-expanded="false">
+                    Más info
+                  </button>
+                  <a href="#" class="article-link">Leer más</a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="article reveal"
+              itemscope
+              itemtype="https://schema.org/BlogPosting"
+              data-category="gatos"
+            >
+              <figure class="article-img">
+                <img
+                  src="https://images.unsplash.com/photo-1574158622682-e40e69881006?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3"
+                  alt="Alimentación de gatos"
+                  loading="lazy"
+                  itemprop="image"
+                />
+                <figcaption>Nutrición felina</figcaption>
+                <span class="article-badge">Gatos</span>
+              </figure>
+              <div class="article-body">
+                <div class="article-meta">
+                  <time datetime="2025-07-29">29 Jul 2025</time>
+                  <span class="reading-time">5 min lectura</span>
+                </div>
+                <h3 class="article-title">
+                  Alimentación saludable para gatos adultos
+                </h3>
+                <p class="article-description">
+                  Descubre qué nutrientes necesita tu gato, cómo elegir el mejor alimento y establecer rutinas de alimentación.
+                </p>
+                <div class="more" aria-hidden="true">
+                  Información sobre proteínas, carbohidratos, vitaminas esenciales, y cómo evitar la obesidad en gatos de interior.
+                </div>
+                <div class="article-actions">
+                  <button class="toggle-more" aria-expanded="false">
+                    Más info
+                  </button>
+                  <a href="#" class="article-link">Leer más</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="blog-cta">
+            <a href="#" class="btn btn-outline">Ver todos los artículos</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Parallax / visual -->
+      <section class="parallax" aria-hidden="true"></section>
 
       <!-- Adoptame -->
-      <section class="adoptame">
+      <section
+        id="adoptame"
+        class="adoptame"
+        aria-labelledby="adoptame-heading"
+      >
         <div class="container">
-            <h2 class="adoptame-title">Adoptame</h2>
-            <p class="adoptame-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta magnam vero, tenetur iusto corporis omnis necessitatibus delectus consequuntur reprehenderit cumque accusamus ad aspernatur ratione laborum nemo velit inventore, similique natus.
-            </p>
+          <h2 id="adoptame-heading" class="adoptame-title">Adóptame</h2>
+          <p class="adoptame-description">
+            Cada año miles de mascotas buscan un hogar. Si puedes adoptar,
+            brindar amor y cuidados, cambias una vida. Conoce procesos de
+            adopción, requisitos y testimonios locales.
+          </p>
+          <a class="btn btn-primary" href="#">Ver mascotas</a>
         </div>
       </section>
 
-      <!-- Footer -->
-      <footer class="footer">
+      <!-- Formulario de Contacto -->
+      <section id="contacto" class="contacto" aria-labelledby="contacto-heading">
         <div class="container">
-            <a href="" class="copy">
-                <p class="copy-title">
-                  Blog<span class="copy-text">Mascotas</span>
-                  &copy; 2023
-                </p>
-              </a>
-      
-              <nav class="nav-footer">
-                <a href="" class="footer-link">Nosotros</a>
-                <a href="" class="footer-link">Adoptame</a>
-                <a href="" class="footer-link">Donaciones</a>
-              </nav>
+          <header class="section-header">
+            <h2 id="contacto-heading" class="section-title">Contacto</h2>
+            <p class="lead">¿Tienes alguna pregunta? Nos encantaría ayudarte</p>
+          </header>
+
+          <div class="contacto-content">
+            <div class="contacto-info reveal">
+              <h3 class="subtitle">¡Hablemos!</h3>
+              <p>Ya sea que tengas una pregunta sobre cuidados, quieras compartir tu historia, o necesites ayuda con tu mascota, estamos aquí para ti.</p>
+              
+              <div class="contact-methods">
+                <div class="contact-item">
+                  <span class="contact-icon">📧</span>
+                  <div>
+                    <strong>Email</strong>
+                    <p>info@blogmascotas.com</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon">📱</span>
+                  <div>
+                    <strong>WhatsApp</strong>
+                    <p>+1 (555) 123-4567</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon">🕒</span>
+                  <div>
+                    <strong>Horario de atención</strong>
+                    <p>Lun - Vie: 9:00 AM - 6:00 PM</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon">⚡</span>
+                  <div>
+                    <strong>Respuesta</strong>
+                    <p>Dentro de 24 horas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <form class="contacto-form reveal" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Nombre completo *</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  class="form-input" 
+                  required 
+                  aria-describedby="name-error"
+                  autocomplete="name"
+                />
+                <span class="form-error" id="name-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email *</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="form-input" 
+                  required 
+                  aria-describedby="email-error"
+                  autocomplete="email"
+                />
+                <span class="form-error" id="email-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">Teléfono</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  class="form-input" 
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Asunto *</label>
+                <select 
+                  id="subject" 
+                  name="subject" 
+                  class="form-select" 
+                  required 
+                  aria-describedby="subject-error"
+                >
+                  <option value="">Selecciona un tema</option>
+                  <option value="consulta-general">Consulta general</option>
+                  <option value="cuidados">Cuidados y salud</option>
+                  <option value="adopcion">Adopción</option>
+                  <option value="colaboracion">Colaboración</option>
+                  <option value="otro">Otro</option>
+                </select>
+                <span class="form-error" id="subject-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Mensaje *</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  class="form-textarea" 
+                  rows="5" 
+                  required 
+                  aria-describedby="message-error"
+                  placeholder="Cuéntanos cómo podemos ayudarte..."
+                ></textarea>
+                <span class="form-error" id="message-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-checkbox-container">
+                  <input 
+                    type="checkbox" 
+                    id="newsletter" 
+                    name="newsletter" 
+                    class="form-checkbox"
+                  />
+                  <span class="checkmark"></span>
+                  Quiero recibir consejos y noticias sobre mascotas por email
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label class="form-checkbox-container">
+                  <input 
+                    type="checkbox" 
+                    id="privacy" 
+                    name="privacy" 
+                    class="form-checkbox" 
+                    required
+                    aria-describedby="privacy-error"
+                  />
+                  <span class="checkmark"></span>
+                  Acepto la <a href="#" class="form-link">política de privacidad</a> *
+                </label>
+                <span class="form-error" id="privacy-error" role="alert"></span>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary form-submit">
+                  <span class="btn-text">Enviar mensaje</span>
+                  <span class="btn-loading" style="display: none;">Enviando...</span>
+                </button>
+              </div>
+
+              <div class="form-success" id="form-success" style="display: none;" role="alert">
+                <span class="success-icon">✅</span>
+                <p>¡Mensaje enviado exitosamente! Te responderemos pronto.</p>
+              </div>
+            </form>
+          </div>
         </div>
-      </footer>
-
-
+      </section>
     </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <a href="#top" class="copy">
+            <p class="copy-title">
+              Blog<span class="copy-text">Mascotas</span> &copy; 2025
+            </p>
+          </a>
+          <p class="small">Contacto: info@example.com</p>
+        </div>
+        <nav class="nav-footer" aria-label="Enlaces de pie de página">
+          <a href="#nosotros" class="footer-link">Nosotros</a>
+          <a href="#adoptame" class="footer-link">Adóptame</a>
+          <a href="#contacto" class="footer-link">Donaciones</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
